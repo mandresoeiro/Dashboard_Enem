@@ -6,14 +6,10 @@ import matplotlib.pyplot as plt
 st.sidebar.image("logo.png", use_column_width=True)  # Insira o caminho para o logotipo
 
 # Menu de navegação
-menu = st.sidebar.radio("Navegação", ["Home",  "Dashboard",])
-
-if menu == "Home":
-    st.title("Página Inicial")
-    st.write("Bem-vindo ao sistema de análise de questões do ENEM!")
+menu = st.sidebar.radio("Navegação", [ "Dashboard",])
 
 
-elif menu == "Dashboard":
+if menu == "Dashboard":
     st.title("Dashboard ENEM - Ocorrência de Questões por Assunto")
 
     data = {
